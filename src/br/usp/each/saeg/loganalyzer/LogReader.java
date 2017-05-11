@@ -15,6 +15,7 @@ public class LogReader {
 		File logDir = new File(path);
 		if(logDir.isDirectory()){
 			logFiles = logDir.listFiles();
+			//System.out.println("dir: "+logDir.listFiles().length);
 		}
 		return logFiles;
 	}
@@ -28,7 +29,7 @@ public class LogReader {
 			reader = new BufferedReader(new FileReader(file));
 			while((logLine = reader.readLine()) != null){
 				logContent.add(logLine);
-				System.out.println(logLine);
+				//System.out.println(logLine);
 			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block

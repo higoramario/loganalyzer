@@ -7,6 +7,7 @@
   <description>A tool for analyzing Jaguar logs</description>
   <build>
     <sourceDirectory>src</sourceDirectory>
+    <testSourceDirectory>test</testSourceDirectory>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -18,4 +19,11 @@
       </plugin>
     </plugins>
   </build>
+  <dependencies>
+	<dependency>
+    	<groupId>genjava</groupId>
+    	<artifactId>gj-csv</artifactId>
+    	<version>1.0</version>
+	</dependency>
+  </dependencies>
 </project>
